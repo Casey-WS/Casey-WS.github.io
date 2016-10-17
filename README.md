@@ -15,7 +15,7 @@ They can be found on github
 
 This is a website and uses PHP, you should upload all the files, and the dependencies, to a server.
 
-It is also viewable live [here](https://www.students.washington.edu/caseyws)
+It is also viewable live [here](https://www.students.washington.edu/caseyws) (Username and password required)
 
 ## Screenshot
 

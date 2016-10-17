@@ -1,0 +1,78 @@
+{
+    "MATH 124" : {
+        "title" : "Calculus with Analytic Geometry I",
+        "number" : "MATH 124",
+        "link" : "https://www.washington.edu/students/crscat/math.html",
+        "desc" : "First quarter in calculus of functions of a single variable. Emphasizes differential calculus. Emphasizes applications and problem solving using the tools of calculus. Prerequisite: either a minimum grade of 2.5 in MATH 120, a score of 154-163 on the MPT-AS placement test, or score of 2 on AP test. Offered: AWSpS.",
+        "prereqs" : [
+            "MATH 120"
+        ],
+        "concurrent" : ""
+    },
+
+    "MATH 125" : {
+        "title" : "Calculus with Analytic Geometry II",
+        "number" : "MATH 125",
+        "link" : "https://www.washington.edu/students/crscat/math.html",
+        "desc" : "Second quarter in the calculus of functions of a single variable. Emphasizes integral calculus. Emphasizes applications and problem solving using the tools of calculus. Prerequisite: either minimum grade of 2.0 in MATH 124, score of 3 on AB advanced placement test, or score of 3 on BC advanced placement test. Offered: AWSpS.",
+        "prereqs" : [
+            "MATH 124"
+        ],
+        "concurrent" : ""
+    },
+
+    "MATH 126" : {
+        "title" : "Calculus with Analytic Geometry III",
+        "number" : "MATH 126",
+        "link" : "https://www.washington.edu/students/crscat/math.html",
+        "desc" : "Third quarter in calculus sequence. Introduction to Taylor polynomials and Taylor series, vector geometry in three dimensions, introduction to multivariable differential calculus, double integrals in Cartesian and polar coordinates. Prerequisite: either a minimum grade of 2.0 in MATH 125, a score of 5 on AB advanced placement test, or a score of 4 on BC advanced placement test. Offered: AWSpS.",
+        "prereqs" : [
+            "MATH 125"
+        ],
+        "concurrent" : ""
+    },
+
+    "MATH 300" : {
+        "title" : "Introduction to Mathematical Reasoning",
+        "number" : "MATH 300",
+        "link" : "https://www.washington.edu/students/crscat/math.html",
+        "desc" : "Mathematical arguments and the writing of proofs in an elementary setting. Elementary set theory, elementary examples of functions and operations on functions, the principle of induction, counting, elementary number theory, elementary combinatorics, recurrence relations. Prerequisite: minimum grade of 2.0 in either MATH 125 or MATH 135. Offered: AWSpS.",
+        "prereqs" : [
+            ["MATH 125", "MATH 135"]
+        ],
+        "concurrent" : ""
+    },
+
+    "MATH 307" : {
+        "title" : "Introdution to Differential Equations",
+        "number" : "MATH 307",
+        "link" : "https://www.washington.edu/students/crscat/math.html",
+        "desc" : "Introductory course in ordinary differential equations. Includes first- and second-order equations and Laplace transform. Prerequisite: minimum grade of 2.0 in MATH 125. Offered: AWSpS.",
+        "prereqs" : [
+            "MATH 125"
+        ],
+        "concurrent" : ""
+    },
+
+    "MATH 308" : {
+        "title" : "Matrix Algebra with Applications",
+        "number" : "MATH 308",
+        "link" : "https://www.washington.edu/students/crscat/math.html",
+        "desc" : "Systems of linear equations, vector spaces, matrices, subspaces, orthogonality, least squares, eigenvalues, eigenvectors, applications. For students in engineering, mathematics, and the sciences. Prerequisite: minimum grade of 2.0 in MATH 126. Offered: AWSpS.",
+        "prereqs" : [
+            "MATH 126"
+        ],
+        "concurrent" : ""
+    },
+
+    "MATH 309" : {
+        "title" : "Linear Analysis",
+        "number" : "MATH 309",
+        "link" : "https://www.washington.edu/students/crscat/math.html",
+        "desc" : "First order systems of linear differential equations, Fourier series and partial differential equations, and the phase plane. Prerequisite: either a minimum grade of 2.0 in both MATH 307 and MATH 308 or minimum grade of 2.0 in MATH 136. Offered: AWSpS.",
+        "prereqs" : [
+            ["MATH 136", ["MATH 307", "MATH 308"]]
+        ],
+        "concurrent" : ""
+    }
+}

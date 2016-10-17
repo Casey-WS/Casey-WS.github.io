@@ -1,0 +1,172 @@
+/* style.css
+ * Name: Casey Williams-Smith
+ * Desc: Style for the coursewebifier object
+*/
+
+/*The window in which the graph is drawn to which the graph is sized
+    Height and Width are set by client*/
+#web {
+    overflow: hidden;
+    background-color: #FFF;  /* Graph background */
+    cursor: default;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*The div with this class is the menu for graph options*/
+.sideNav {
+    height: 100%;
+    background-color: LightGray; /* Menu background */
+    max-width: 0;  /* Width when menu is hidden */
+    position: absolute; /* Attached to right side */
+    top: 0;
+    right: 0; /* positioning*/
+    z-index: 1; /* Menu is above web div */
+    text-align: right;
+    padding-top: 36pt;  /* Menu items start after the button */
+    font-size: 2vh;  /* Size of menu options */
+    transition: max-width 0.75s;  /*This works weirdly because of the max-width hack*/
+}
+
+/* Class given to sideNav when menu nutton pressed */
+.sideNavOpen {
+    max-width: 50%; /* CSS hack to allow the menu to slide open     */
+    /* but only do so to the width of the largest element in the menu*/
+}
+
+/* A menu option, of which there could be several */
+.sideNav span {
+    white-space: nowrap;  /*Overflow hidden + whitespace nowrap, so clean menu open/close*/
+    overflow: hidden;
+    display: block;  /*So consecutive spans will be on different lines*/
+    padding-right: 12pt;
+    padding-left: 12pt;
+}
+
+.menuOption {
+    font-size: 1.5vh;
+    color: white;
+}
+
+/*A button openning and closing the side menu, who's style matches the list*/
+#sideNavButton {
+    font-size: 2vh;
+    text-align: left;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    z-index: 2;
+    cursor: default;
+}
+
+/* All normal text content should be colored and react the same way */
+#sideNavButton, .sideNav {
+    color: black;  /* Menu text Color */
+}
+
+/* Menu button reacts on hover*/
+#sideNavButton:hover, .sideNav span:hover {
+    color: gray;  /* Menu Text Hover Color */
+}
+
+
+/*Window that displays the class information*/
+#tooltip {
+    font-family: sans-serif;
+    position: absolute;
+    background-color: #DDDDDD;  /* Tooltip background */
+    width: 25%;
+    z-index: 1;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 1em;
+    pointer-events: none;
+}
+
+#tooltip .title {
+    color: black;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+#tooltip .desc {
+    font-size: 13pt;
+}
+
+#tooltip .prereqsFooter {
+    font-weight: bold;
+}
+
+/*Library information in bottom left corner*/
+#citation {
+    position: absolute;
+    left: 0.5%;
+    bottom: 0;
+    width: 2.5%;
+    font-size: 2vh;
+    opacity: .5;
+    text-align: center;
+    z-index: 1;
+    display: inline-block;
+    transition: 0.75s;
+}
+
+#citation a {
+    text-decoration: none;
+    color: black;
+}
+
+#citation:hover {
+    opacity: 0.7;
+    background-color: lightGray;
+    white-space: nowrap;
+    width: 26%;
+    overflow: hidden;
+}
+
+#refresh {
+    position: absolute;
+    font-size: 2em;
+    z-index: 1;
+    cursor: default;
+    top: 0;
+    left: 0;
+    line-height: 1em;
+}
+
+#refresh:hover {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    background-color: #C4C4C4;
+    border: solid black 3px;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    font-size: 200%;
+    font-family: sans-serif;
+    line-height: 200%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+}
+
+#loading {
+    position: absolute;
+    display: inline-block; 
+    top: 45%;
+    left: 45%;
+    margin-left: auto;
+    z-index: 1;
+}
+
+
+

@@ -1,0 +1,104 @@
+<!-- 
+index.html
+Name: Casey Williams-Smith
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Explore paths in CSE</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> <!-- Google Font -->
+        <!-- Style sheets must be included before Cytoscape -->
+        <link href="style.css" type="text/css" rel="stylesheet" />
+        <link href="webifierStyle.css" type="text/css" rel="stylesheet" />
+        <!-- Cytoscape library, and the cose-bilkent algorithm -->
+        <script type="text/javascript" src="cytoscape.js"></script>
+        <script type="text/javascript" src="cytoscape-cose-bilkent.js"></script>
+        <!--coursewebifier requires an element with id "web" on page.
+                Will respect its dimensions, but turn it into a interactive graph-->
+        <script type="text/javascript" src="coursewebifier.js"></script> <!-- Create graph object -->
+        <script type="text/javascript" src="javascript.js"></script>  <!--Behavior for this page (excluding graph)-->
+    </head>
+    <body>
+        <!-- Hidden for brevity -->
+        <!-- <div class="obscuringBackground">
+            <div id="welcome">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <span id='closeButton'>Close</span>
+            </div>
+        </div> -->
+        <div id="web">
+            <div id="tooltip" class="hidden">
+                <span class="title"></span>
+                <div class="desc"></div>
+                <span class="prereqsFooter"></span>
+            </div>
+            <span id="sideNavButton">&#9776;</span> 
+            <div class="sideNav">
+                <!-- Dynamically placed options -->
+                <span class='menuOption'>Databases</span>
+                <span class='menuOption'>Graphics, Games and Animation</span>
+                <span class='menuOption'>Web Design</span>
+                <span class='menuOption'>Lorem Ipsum</span>
+                <span>Course Paths</span>
+                
+            </div>
+            <span id='citation'>?</span>
+            <div id='loading' class='hidden'><img src='ball.gif' /></div>
+            <span id="refresh">&#x21bb;</span> 
+        </div>
+
+        <div id='instructions'>
+            <h2>How do I use this site?</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <h4>Controls</h4>
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>consectateur elit</li>
+                <li>Lorem ipsum dolor sit amet</li>
+            </ul>
+        </div>
+
+        <div id="information">
+            <h1>Information</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <h2>Useful resorces</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <ul>
+                <li><a href="">Lorem</a></li>
+                <li><a href="">Ipsum</a></li>
+                <li><a href="">Dolor</a></li>
+                <li><a href="">Sit Amet</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

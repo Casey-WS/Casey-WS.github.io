@@ -4,19 +4,15 @@ A course visualizer for CS courses.
 
 ## Dependencies
 
-This website requires the 
+This website requires the following dependencies
 
  * cytoscape.js
  * cytoscape-cose-bilkent.js
 
-## Usage
+They can be found on github
 
-This is a website. It 
+## Installation
 
-## Credits
+This is a website and uses PHP, you should upload all the files, and the dependencies, to a server.
 
-
-
-## License
-
-TODO: Write license
+It is also viewable live [here](students.washington.edu/caseyws)

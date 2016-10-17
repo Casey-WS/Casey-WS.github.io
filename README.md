@@ -20,3 +20,9 @@ It is also viewable live [here](https://www.students.washington.edu/caseyws)
 ## Screenshot
 
 ![In action](example.png)
+
+## Todo
+
+  * Implement course path explorer
+  * Implement portability to all browser
+  * Create a mobile version
